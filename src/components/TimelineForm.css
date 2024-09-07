@@ -1,0 +1,220 @@
+.timeline-page {
+    position: relative;
+}
+
+.timeline-form {
+    max-width: 525px;
+    margin: 10px auto;
+    background-color: #fde2f3;
+    border-radius: 10px;
+    padding: 0 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #2a2f4f;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container {
+    background-color: #fde2f3;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border: 2px dashed #917fb3;
+    border-radius: 10px;
+}
+
+h3 {
+    margin-top: 2px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #2a2f4f;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.file-info {
+    display: inline-block;
+    font-size: 14px;
+    color: #726a6a;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"] {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    padding: 0px 20px;
+    border: 1px solid #e5beec;
+    border-radius: 10px;
+    background-color: #e5beec;
+    box-sizing: border-box;
+}
+
+.input-group input[type="file"] {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #e5beec;
+    cursor: pointer;
+    text-align: center;
+}
+
+.input-group input[type="file"]::before {
+    content: 'Choose File';
+    font-size: 15px;
+    display: block;
+    color: #000000;
+    background: #e5beec;
+    padding: 9.2px;
+    border: 2px dashed #917fb3;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.input-group input[type="file"]::-webkit-file-upload-button {
+    display: none;
+}
+
+.milestone-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.milestone-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.milestone-inputs label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.milestone-inputs input {
+    font: 15px sans-serif;
+    padding: 8px;
+    padding-left: 10px;
+    border: 1px solid #e5beec;
+    border-radius: 10px;
+    background-color: #e5beec;
+    width: 100%;
+}
+
+.delete-milestone-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.delete-icon {
+    width: 10px;
+    padding-right: 0px;
+}
+
+.add-milestone-btn {
+    display: block;
+    padding: 15px;
+    background-color: #917fb3;
+    color: #fde2f3;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 30px auto 0px;
+    text-align: center;
+}
+
+.create-timeline-btn {
+    display: block;
+    padding: 15px;
+    background-color: #917fb3;
+    color: #fde2f3;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.bottom-left-icons {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-text-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.left-icon {
+    width: 22px;
+}
+
+.left-icon1 {
+    width: 30px;
+    margin-top: 5px;
+    
+}
+
+.from {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.icon-text span {
+    line-height: 1;
+    margin: 0;
+}
+
+.icon-text .greets-u {
+    font-size: 30px;
+    font-weight: 600;
+    color: #2a2f4f;
+}
+
+.create-timeline-btn:hover,
+.add-milestone-btn:hover,
+.delete-milestone-btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 1000px) {
+    .bottom-left-icons {
+        display: none;
+    }
+}
